@@ -9,7 +9,7 @@ GPIO.setmode(GPIO.BCM)
 # Define GPIO to use on Pi
 GPIO_TRIGECHO = 13
 
-print "Ultrasonic Measurement"
+print("Ultrasonic Measurement")
 
 # Set pins as output and input
 GPIO.setup(GPIO_TRIGECHO,GPIO.OUT)  # Initial state as output
@@ -47,7 +47,7 @@ def measure():
 try:
     while True:
         distance = measure()
-        print "  Distance : %.1f cm" % distance
+        print("  Distance : %.1f cm" % distance)
         time.sleep(1)
 
 except KeyboardInterrupt:
